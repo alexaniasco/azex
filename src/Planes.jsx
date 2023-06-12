@@ -17,7 +17,7 @@ export const Planes = () => {
                         <p>en el lugar correcto</p>
                     </div>
                     <div className="preciosplanestext">
-                        <p>Todos los planes cuentan con diseño flexible, bases UI/UIX y dominio .com</p>
+                        <p>Todos los planes cuentan con diseño flexible, bases UI/UX y dominio .com</p>
                     </div>
                     <div className="preciosplanestext">
                         <p>

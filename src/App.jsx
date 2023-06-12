@@ -4,6 +4,8 @@ import "./App.css";
 import { Planes } from "./Planes";
 import { Servicios } from "./Servicios";
 import { ServiciosDos } from "./ServiciosDos";
+import { Futer } from "./Futer";
+import { Porque } from "./Porque";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -84,7 +86,7 @@ function App() {
           <button
             style={{ color: textColor, border: `1px solid ${textColor}` }}
           >
-            Ingresar
+            Contacto
           </button>
         </div>
       </nav>
@@ -106,7 +108,8 @@ function App() {
       </div>
       <Planes></Planes>
       <ServiciosDos></ServiciosDos>
-      <Servicios></Servicios>
+      <Porque></Porque>
+       <Futer></Futer>
 
     </div>
   );
