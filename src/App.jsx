@@ -6,6 +6,8 @@ import { Servicios } from "./Servicios";
 import { ServiciosDos } from "./ServiciosDos";
 import { Futer } from "./Futer";
 import { Porque } from "./Porque";
+import { Preguntas } from "./Preguntas";
+import { Banner } from "./Banner";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +16,7 @@ function App() {
   const [index, setIndex] = useState(0);
 
   const delay = 200; // Retardo entre cada letra (en milisegundos)
-  const fullText = "Emprende en el lugar correcto.";
+  const fullText = "En tu propia pagina Web.";
 
   useEffect(() => {
     if (index < fullText.length) {
@@ -41,7 +43,7 @@ function App() {
         window.pageYOffset || document.documentElement.scrollTop;
 
       if (scrollTop > 0) {
-        setNavbarColor("#ffffff");
+        setNavbarColor("transparent");
         setTextColor("black");
         setSombra(
           " 0px 2px 4px rgba(0, 0, 0, 0.2)"
@@ -72,7 +74,7 @@ function App() {
 
   return (
     <div className="total">
-      <nav style={{ backgroundColor: navbarColor, boxShadow: sombra }}>
+      <nav style={{ backgroundColor: navbarColor, boxShadow: sombra, backdropFilter: 'blur(10px)' }}>
         <div className="logo" style={{ color: textColor }}>
           <img src="../public/logo.png" alt="" />
         </div>
@@ -92,7 +94,7 @@ function App() {
       </nav>
       <div className="container">
         <div className="titulo">
-          <h1>Creando la nueva generación de desarrollo web.</h1>
+          <h1>Le damos vida<br/>a tus proyectos</h1>
           {text !== "" ? <p className="maquina">{text}</p> : <p> </p>}
         </div>
 
@@ -109,7 +111,9 @@ function App() {
       <Planes></Planes>
       <ServiciosDos></ServiciosDos>
       <Porque></Porque>
-       <Futer></Futer>
+      <Preguntas></Preguntas>
+      <Banner></Banner>
+      <Futer></Futer>
 
     </div>
   );
