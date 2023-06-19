@@ -18,6 +18,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+#root{
+  max-width: 100% !important;
+  
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -30,7 +35,8 @@ a:hover {
 body {
   display: flex;
   margin: 0 !important;
-  overflow-x: hidden;
+
+  
   justify-content: center;
 }
 @keyframes cambiar {

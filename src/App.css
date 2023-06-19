@@ -12,7 +12,46 @@
   }
 }
 
-.container {
+
+@media (max-width: 1000px){
+.preciosplanes1{
+  display: none !important;
+}
+.preciosplanes{
+  display: block !important;
+}
+
+.preciosplanes2{
+  margin-right: 0 !important;
+}
+
+.porque_grid{
+  display: inline !important;
+}
+.porque_flex{
+  display: inline !important;
+}
+.porque_text{
+  width: 100% !important;
+}
+.porque_text p{
+  width: 100% !important;
+}
+.porque_text button{
+  width: 100% !important;
+}
+}
+
+.logowpp{
+  width: 60px;
+position: fixed;
+bottom: 40px;
+right: 20px;
+z-index: 999;
+}
+.containerr {
+ 
+  position: relative;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -26,14 +65,14 @@
   align-items: center;
 }
 
-.container img {
+.containerr img {
   position: absolute;
-  width: 98%;
-  height: 102vh;
+ width: 100vw;
+height: 100vh;
   top: 0;
   left: 0;
   object-fit: cover;
-  z-index: 1;
+  z-index: 0;
 }
 
 .cere {
@@ -42,12 +81,12 @@
 
 .img_landing {
   overflow: hidden;
-  z-index: 0;
+ 
 
-  height: 100%;
+  height: 100vh;
 }
 
-.container h1 {
+.containerr h1 {
   font-size: 3.875rem;
   font-family: "Manrope", sans-serif;
   margin-left: 34px;
@@ -79,6 +118,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   z-index: 999;
+  display: none;
 }
 
 .menu {
@@ -120,11 +160,40 @@ nav {
 }
 
 .total {
-  display: flex;
-  flex-direction: column;
+  
+  display: grid;
+  grid-template-columns: 100vw 100vw 100vw 100vw 100vw 100vw;
+  overflow-x: scroll !important;
+  overflow-y: hidden !important; /* Habilita el desplazamiento horizontal */
+
+  justify-content: start;
   width: 100%;
-  margin: 0;
+  height: 100vh;
+  margin: 0 !important;
+ 
+  /* Ajusta la duración de la transición según tus necesidades */
+
+  scroll-snap-align: start;
+  transition: all 1s ease;
 }
+
+
+.total::-webkit-scrollbar {
+  width: 4px;
+  height: 4px; /* Ancho de la barra de desplazamiento */
+}
+
+.total::-webkit-scrollbar-track {
+  background-color: #000000c2; /* Color del fondo de la barra de desplazamiento */
+}
+
+.total::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color de la barra de desplazamiento */
+  border-radius: 5px; /* Radio de borde de la barra de desplazamiento */
+}
+
+.total::-webkit-scrollbar-thumb:hover {
+  background-color: #55555560}
 
 /*----------------------------------- SERVICIOS-------------------------------------------- */
 
@@ -254,17 +323,18 @@ nav {
   position: relative;
   z-index: 5;
   background-image: url("../public/preciosimg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 0px 10px;
+
+
+ 
 
 
 }
 
 .preciosplanes {
-  margin: 100px 0;
+  height: 100vh;
   display: grid;
   grid-template-columns: 25% 75%;
+  align-items: center;
 
 }
 
@@ -273,16 +343,19 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
-
+height: 100vh;
   margin-left: 60px;
   font-weight: 400;
 }
 
-
+.preciosplanesimg{
+  width: 100%;
+}
 .preciosplanes2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 60px;
 }
 
 .card1 {
@@ -294,15 +367,15 @@ nav {
 }
 
 .card2 {
-  height: 400px;
-  padding: 20px;
+  height: 440px;
+ 
   background-color: #55407f9a;
   width: 240px;
   border-radius: 1rem;
   backdrop-filter: blur(8px);
 }
 
-.card3 {}
+
 
 
 
@@ -385,24 +458,40 @@ nav {
 .btn-grid {
   border-radius: 2rem;
   position: absolute;
+ top:40px;
   right: 40px;
   background-color: rgba(255, 255, 255, 0.151);
 }
 
 
 .table_cont {
-
+border: 1px solid rgba(245, 245, 245, 0.034);
   background-color: #301c6a67;
-  min-height: 440px;
+
+  height: 80vh;
   margin: 0 40px;
   border-radius: 2rem;
   color: wheat;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  
+}
+table{
+  width: 90%;
 }
 
+th{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.349) !important;
+}
+.tr_ultimo th{
+  border-bottom: 1px solid rgba(245, 222, 179, 0) !important;
+}
 .serviciosDos{
-
-  width: 100vw;
+ background-image: url("/public/sombras.png");
+ background-size: cover;
+ background-blend-mode:darken;
+ 
+ height: 100vh;
 
 font-family: 'Kanit', sans-serif;;
 }
@@ -410,14 +499,18 @@ font-family: 'Kanit', sans-serif;;
 .serviciosDosHead{
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 80px;
+ height: 100vh;
+ align-items: center;
 }
 .servidiosDosImagenCont{
   display: flex;
   justify-content: center;
+  margin-right: 80px;
 }
 .serviciosDosImagen{
-  width: 70%;
+max-width: 500px;
+
+ object-fit: fill;
 }
 
 .serviciosDosText{
@@ -433,7 +526,7 @@ font-family: 'Kanit', sans-serif;;
   margin-top: 40px;
   margin-left: 80px;
   margin-right: 80px;
- max-width: 100vw;
+ 
   justify-content: space-between;
   font-weight: 700;
 }
@@ -445,30 +538,58 @@ font-family: 'Kanit', sans-serif;;
 .futer_main{
  
   background-color: #202020;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+
 }
 
 .form{
   display: flex;
-  width: 100%;
+  flex-direction: column;
   margin: 40px 80px; 
-  justify-content: stretch;
-  
 
 }
+
+.form textarea{
+  resize:none;
+  height: 80px;
+border-radius: 4px;
+margin-bottom: 20px;
+}
+
 .form input{
-width: 30%;
+  height: 38px;
+  border-radius: 4px;
+  
 }
 
 .form button{
-  background-color: #beb1b19a;
+  background-color:rgb(25, 160, 25);
+  color: whitesmoke;
+}
+
+.futer_redes{
+  text-align: center;
 }
 
 /* ---------------------------porque---------------------------- */
 
 
 .porque_main{
-  margin: 60px 80px 80px 80px ;
- 
+
+  background-image: url("/public/sombras2.png");
+  background-size: cover;
+  background-size: 170%;
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  background-position-y: -420px;
+  margin: 0 80px;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
   color:rgb(41, 41, 41);
 }
 
@@ -482,10 +603,11 @@ width: 30%;
 }
 
 .porque_text{
+  margin-top: 40px;
   width: 35%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-weight: 500;
 }
 
@@ -504,6 +626,9 @@ width: 30%;
   rgba(25, 160, 25, 0.973));
   filter: brightness(1.2);
   filter: opacity(80%);
+  background-size: 200%;
+  animation: cambiar 20s ease-in infinite;
+  
 }
 
 .porque_grid{
@@ -515,20 +640,19 @@ width: 30%;
 }
 
 .porque_card{
-  background-color: rgb(225, 237, 241);
+  background-color: rgba(225, 237, 241, 0.658);
   border-radius: 1rem;
   position: relative;
 }
 
 .porque_card h4{
   text-align: center;
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .porque_card p{
-  width: 60%;
+  width: 70%;
   margin-left: 110px;
-  font-weight: 500;
+  
 }
 .porque_card img{
   position: absolute;
@@ -537,9 +661,12 @@ width: 30%;
 }
 
 .preguntas_main{
-  margin: 0 80px;
-  width: 100%;
-  margin-bottom: 80px;
+  position: relative;
+  height: 100vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
 }
 
 .preguntas_main h2{
@@ -557,7 +684,7 @@ width: 30%;
 
 .preguntas_botones button{
 text-align: start;
-  width: 100%;
+  width: 110%;
   background-color: rgba(245, 245, 245, 0.548);
   border: 1px solid rgba(0, 0, 0, 0.164);
 }
@@ -578,6 +705,12 @@ text-align: start;
 
 
 .banner_main{
+  color: whitesmoke;
+  height: 80px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  text-align: center;
   background: linear-gradient(45deg,
       rgba(252, 36, 36, 0.938),
       rgba(9, 9, 240, 0.993),
@@ -585,5 +718,7 @@ text-align: start;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background-size: 200%;
+      animation: cambiar 20s ease-in infinite;
 }
 

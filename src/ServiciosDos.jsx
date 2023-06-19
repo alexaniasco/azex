@@ -14,12 +14,7 @@ export const ServiciosDos = () => {
                     <img className='serviciosDosImagen' src="/pc.png" alt="" />
                 </div>
             </div>
-            <div className='serviciosDosAbajo'>
-                <p>Digital Marketing</p>
-                <p>Adaptacion a todo dispositivo</p>
-                <p>Posicionamiento en motores de busqueda</p>
-                <p>Mantenimiento y optimizacion.</p>
-            </div>
+         
         </div>
     )
 }

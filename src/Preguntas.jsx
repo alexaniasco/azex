@@ -1,9 +1,10 @@
 import React from 'react'
+import { Banner } from './Banner'
 
 export const Preguntas = () => {
   return (
     <div className='preguntas_main'>
-          <h2 style={{color:"black",fontSize:"40px",color:"#511D9A"}}>Las excusas de hoy son el futuro de mañana.</h2>
+          <h2 style={{fontSize:"40px",color:"#511D9A"}}>Las excusas de hoy son el futuro de mañana.</h2>
 <div className='preguntas_group'>
     <div className='preguntas_botones'>
       <button>Por que emprender en la Web?</button>
@@ -14,6 +15,7 @@ export const Preguntas = () => {
     </div>
     <img src="/preguntas.png" alt="" />
 </div>
+<Banner></Banner>
     </div>
   )
 }

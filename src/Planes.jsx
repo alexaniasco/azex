@@ -21,9 +21,9 @@ export const Planes = () => {
                     </div>
                     <div className="preciosplanestext">
                         <p>
-                            <img src="/preciosbtn.png" alt="" />
+                            <img className='preciosplanesimg' src="/preciosbtn.png" alt="" />
                         </p>
-                        <img src="/preciosilu.png" alt="" />
+                        <img className='preciosplanesimg'  src="/preciosilu.png" alt="" />
                     </div>
                 </div>
                 {section == false ? <div className="preciosplanes2">
@@ -86,24 +86,70 @@ export const Planes = () => {
 
                         <table>
                             <tr>
-                                <th>Nombre</th>
-                                <th>Apellidos</th>
-                                <th>País</th>
+                                <th></th>
+                                <th>Essential</th>
+                                <th>Pro</th>
+                                <th>Ecommerce Pro</th>
                             </tr>
                             <tr>
-                                <td>Kiko</td>
-                                <td>Palomares</td>
-                                <td>España</td>
+                            <th>Diseño atractivo</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
                             </tr>
                             <tr>
-                                <td>Juan</td>
-                                <td>Hernández</td>
-                                <td>México</td>
+                            <th>Navegacion sencilla</th>
+                            <th>&#9989;</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
                             </tr>
                             <tr>
-                                <td>Sofía</td>
-                                <td>Martínez</td>
-                                <td>Argentina</td>
+                            <th>Info de contacto</th>
+                            <th>&#9989;</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
+                            </tr>
+                            <tr>
+                            <th>Productos/servicios</th>
+                            <th>Limitada</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
+                            </tr>
+                            <tr>
+                            <th>Carrito de compras</th>
+                            <th>&#10060;</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
+                            </tr>
+                            <tr>
+                            <th>Pasarela de pagos</th>
+                            <th>&#9989;</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
+                            </tr>
+                            <tr>
+                            <th>Inventario</th>
+                            <th>&#10060;</th>
+                            <th>&#10060;</th>
+                                <th>&#9989;</th>
+                            </tr>
+                            <tr>
+                            <th>Inicio de sesion</th>
+                            <th>&#10060;</th>
+                            <th>Limitada</th>
+                                <th>&#9989;</th>
+                            </tr>
+                            <tr>
+                            <th>Panel admin</th>
+                            <th>&#10060;</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
+                            </tr>
+                            <tr className='tr_ultimo'>
+                            <th>Promociones</th>
+                            <th>&#10060;</th>
+                                <th>&#9989;</th>
+                                <th>&#9989;</th>
                             </tr>
                         </table>
 
